@@ -1,8 +1,8 @@
-# slid.py
+# slid
 
 A terminal-based presentation tool that turns Markdown files into beautiful interactive slides with code execution capabilities. 
 
-![Terminal Slides Screenshot](https://via.placeholder.com/800x450)
+![Terminal Slides Screenshot](assets/screen.jpeg)
 
 ## Features
 
@@ -15,69 +15,29 @@ A terminal-based presentation tool that turns Markdown files into beautiful inte
 - 🌐 Open URLs directly from the presentation
 - 🎨 Elegant color scheme and formatting
 
-## Run using pipx
-
-```bash
-pipx 
-```
-
 ## Installation
 
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/slid.py.git
 cd slid.py
+pip install .
+```
 
-# Install required dependencies
-pip install -r requirements.txt
+or
+
+```bash
+pip install git+https://github.com/ismaelfaro/slid.py.git
 ```
 
 ## Usage
 
-### Creating Slides
-
-Create a Markdown file with slides separated by `---`:
-
-```markdown
-# My Presentation
-
-First slide content
-
----
-
-## Second Slide
-
-- Bullet points
-- **Bold text**
-- *Italic text*
-
----
-
-## Code Example
-
-```python
-def hello():
-    print("Hello, world!")
-    
-hello()
+```bash
+slid your_presentation.md
 ```
-
----
-
-## More Content
-
-Final slide
-```
-
-### Running the Presentation
 
 ```bash
-python slid.py your_presentation.md
-```
-
-Optional arguments:
-```bash
-python slid.py your_presentation.md --author "Your Name"
+slid your_presentation.md --author "Your Name"
 ```
 
 ## Navigation
@@ -114,10 +74,6 @@ To copy code to your clipboard:
 1. Press **c** followed by the block number (e.g., **c 1**)
 2. A confirmation will display that the code was copied
 3. Press any key to return to the presentation
-
-## Requirements
-
-
 
 ## License
 

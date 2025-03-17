@@ -241,7 +241,7 @@ class MarkdownSlides:
 
     def render_header(self):
         """Render the slide header with just the presentation name."""
-        presentation_name = Path(self.markdown_file).stem.replace("_", " ").title()
+        presentation_name = Path(self.markdown_file).stem.replace("_", " ")
 
         return Panel(
             Align.center(
