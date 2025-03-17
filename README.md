@@ -16,18 +16,8 @@ A terminal-based presentation tool that turns Markdown files into beautiful inte
 - 🎨 Elegant color scheme and formatting
 
 ## Installation
-
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/slid.py.git
-cd slid.py
-pip install .
-```
-
-or
-
-```bash
-pip install git+https://github.com/ismaelfaro/slid.py.git
+pip install slid
 ```
 
 ## Usage
