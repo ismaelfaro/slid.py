@@ -773,7 +773,6 @@ class MarkdownSlides:
             self.display_slide(slide_index)
 
             key = self.get_key()
-
             if key == "q":
                 break
             elif key == "r":  # Run code or open URL
@@ -816,6 +815,7 @@ class MarkdownSlides:
                 "down",
                 " ",
                 "\r",
+                "\n",
             ):  # Next slide (right arrow, down arrow, space, or Enter)
                 slide_index = min(slide_index + 1, len(self.slides) - 1)
             elif key in ("p", "left", "up"):  # Previous slide (left arrow, up arrow)
